@@ -111,7 +111,7 @@ http://localhost:8080
 ## Roadmap
 
 - [x] **Milestone 1**: Project Setup & Clean Architecture Persistence Foundation
-- [ ] **Milestone 2**: Accounts Domain & Liquid Cash Flow Operations
+- [x] **Milestone 2**: Accounts Domain & Liquid Cash Flow Operations
 - [ ] **Milestone 3**: Asset Operations, Configuration Properties & Settings REST API
 - [ ] **Milestone 4**: External Market & Inflation Providers with Resilient Caching
 - [ ] **Milestone 5**: Core Tracking Calculator Engine & Consolidated Dashboard API
