@@ -35,7 +35,7 @@ The system is architected to maximize operational clarity, maintainability, and 
 ## Project Structure
 
 ```
-com.beholdertracker
+com.ladeschamps.beholdertracker
 ├── domain          # Core enterprise entities and business invariants
 ├── usecase         # Application interactors, business rules, and port interfaces
 ├── adapter         # Inbound/outbound adapters (REST controllers, JPA repositories, external gateways)

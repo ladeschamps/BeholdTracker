@@ -1,4 +1,4 @@
-package com.beholdertracker;
+package com.ladeschamps.beholdertracker;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
