@@ -58,11 +58,11 @@ To build and run this application efficiently, ensure the following tools are in
 
 Application settings and fallback parameters are configured in `src/main/resources/application.yml`. Key environment variables:
 
-| Variable | Description | Default |
-| --- | --- | --- |
-| `SPRING_DATASOURCE_URL` | PostgreSQL JDBC connection URL | `jdbc:postgresql://localhost:5432/beholdertracker` |
-| `SPRING_DATASOURCE_USERNAME` | Database username | `postgres` |
-| `SPRING_DATASOURCE_PASSWORD` | Database password | `postgres` |
+| Variable                     | Description                     | Default                                            |
+|------------------------------|---------------------------------|----------------------------------------------------|
+| `SPRING_DATASOURCE_URL`      | PostgreSQL JDBC connection URL  | `jdbc:postgresql://localhost:5432/beholdertracker` |
+| `SPRING_DATASOURCE_USERNAME` | Database username               | `postgres`                                         |
+| `SPRING_DATASOURCE_PASSWORD` | Database password               | `postgres`                                         |
 
 ### Default Parameterization
 

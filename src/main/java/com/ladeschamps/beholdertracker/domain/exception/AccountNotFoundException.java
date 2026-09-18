@@ -8,7 +8,7 @@ public class AccountNotFoundException extends RuntimeException {
     private final Long accountId;
 
     public AccountNotFoundException(Long accountId) {
-        super(String.format("Account with ID %d not found", accountId));
+        super("Account with ID " + accountId + " not found");
         this.accountId = accountId;
     }
 

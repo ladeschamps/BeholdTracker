@@ -21,7 +21,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
 /**
  * Inbound REST adapter exposing HTTP endpoints for Account and cash movement operations.
@@ -102,7 +101,7 @@ public class AccountController {
     public ResponseEntity<List<AccountResponse>> getAllAccounts() {
         List<AccountResponse> accounts = accountRepositoryPort.findAll().stream()
                 .map(AccountResponse::fromDomain)
-                .collect(Collectors.toList());
+                .toList();
         return ResponseEntity.ok(accounts);
     }
 }

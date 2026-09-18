@@ -12,8 +12,7 @@ public class InsufficientBalanceException extends RuntimeException {
     private final BigDecimal withdrawalAmount;
 
     public InsufficientBalanceException(Long accountId, BigDecimal currentBalance, BigDecimal withdrawalAmount) {
-        super(String.format("Insufficient balance for account ID %s: current balance is %s, attempted withdrawal is %s",
-                accountId, currentBalance, withdrawalAmount));
+        super("Insufficient balance for account ID " + accountId + ": current balance is " + currentBalance + ", attempted withdrawal is " + withdrawalAmount);
         this.accountId = accountId;
         this.currentBalance = currentBalance;
         this.withdrawalAmount = withdrawalAmount;

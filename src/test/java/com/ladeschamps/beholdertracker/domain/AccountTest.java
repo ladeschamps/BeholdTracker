@@ -85,7 +85,7 @@ class AccountTest {
 
         account.withdraw(new BigDecimal("1000.00"));
 
-        assertEquals(BigDecimal.ZERO, account.getCurrentBalance());
+        assertEquals(new BigDecimal("0.00"), account.getCurrentBalance());
     }
 
     @Test
