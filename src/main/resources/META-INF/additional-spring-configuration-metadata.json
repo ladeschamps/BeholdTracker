@@ -1,27 +1,27 @@
 {
   "properties": [
     {
-      "name": "beholdertracker.defaults.buy-operational-cost",
+      "name": "beholdtracker.defaults.buy-operational-cost",
       "type": "java.math.BigDecimal",
       "description": "Standard operational cost applied automatically to BUY orders."
     },
     {
-      "name": "beholdertracker.defaults.sell-operational-cost",
+      "name": "beholdtracker.defaults.sell-operational-cost",
       "type": "java.math.BigDecimal",
       "description": "Standard operational cost applied automatically to SELL orders."
     },
     {
-      "name": "beholdertracker.defaults.expected-profit-rate-aa",
+      "name": "beholdtracker.defaults.expected-profit-rate-aa",
       "type": "java.math.BigDecimal",
       "description": "Standard annual target profit rate."
     },
     {
-      "name": "beholdertracker.price-provider.active",
+      "name": "beholdtracker.price-provider.active",
       "type": "java.lang.String",
       "description": "Active market price provider implementation (MOCK, BRAZILIAN_EXCHANGE_API)."
     },
     {
-      "name": "beholdertracker.cache.prices.ttl-minutes",
+      "name": "beholdtracker.cache.prices.ttl-minutes",
       "type": "java.lang.Integer",
       "description": "In-memory price cache TTL in minutes."
     }

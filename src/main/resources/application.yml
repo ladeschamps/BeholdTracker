@@ -3,10 +3,10 @@ server:
 
 spring:
   application:
-    name: beholdertracker
+    name: beholdtracker
 
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/beholdertracker}
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/beholdtracker}
     username: ${SPRING_DATASOURCE_USERNAME:postgres}
     password: ${SPRING_DATASOURCE_PASSWORD:postgres}
     driver-class-name: org.postgresql.Driver
@@ -23,7 +23,7 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
 # Global Application Defaults & Configurations (Section 4.1, 5.2, 6.1)
-beholdertracker:
+beholdtracker:
   defaults:
     buy-operational-cost: 5.00
     sell-operational-cost: 7.00

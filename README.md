@@ -1,6 +1,6 @@
-# BeholderTracker
+# BeholdTracker
 
-BeholderTracker is a financial application engineered to track investment growth on the B3 (Brazilian Stock Exchange). It evaluates portfolio performance by comparing real net returns against user-defined growth targets and macroeconomic benchmarks, specifically accumulated IPCA inflation.
+BeholdTracker is a financial application engineered to track investment growth on the B3 (Brazilian Stock Exchange). It evaluates portfolio performance by comparing real net returns against user-defined growth targets and macroeconomic benchmarks, specifically accumulated IPCA inflation.
 
 The system is architected to maximize operational clarity, maintainability, and decision-making utility for investors seeking accurate, inflation-adjusted portfolio tracking.
 
@@ -35,7 +35,7 @@ The system is architected to maximize operational clarity, maintainability, and 
 ## Project Structure
 
 ```
-com.ladeschamps.beholdertracker
+com.ladeschamps.beholdtracker
 ├── domain          # Core enterprise entities and business invariants
 ├── usecase         # Application interactors, business rules, and port interfaces
 ├── adapter         # Inbound/outbound adapters (REST controllers, JPA repositories, external gateways)
@@ -60,18 +60,18 @@ Application settings and fallback parameters are configured in `src/main/resourc
 
 | Variable                     | Description                     | Default                                            |
 |------------------------------|---------------------------------|----------------------------------------------------|
-| `SPRING_DATASOURCE_URL`      | PostgreSQL JDBC connection URL  | `jdbc:postgresql://localhost:5432/beholdertracker` |
+| `SPRING_DATASOURCE_URL`      | PostgreSQL JDBC connection URL  | `jdbc:postgresql://localhost:5432/beholdtracker`   |
 | `SPRING_DATASOURCE_USERNAME` | Database username               | `postgres`                                         |
 | `SPRING_DATASOURCE_PASSWORD` | Database password               | `postgres`                                         |
 
 ### Default Parameterization
 
 Default transaction fees and target profit expectations can be tuned via configuration:
-- `beholdertracker.defaults.buy-operational-cost`: Standard operational cost for BUY orders (default: `5.00` BRL).
-- `beholdertracker.defaults.sell-operational-cost`: Standard operational cost for SELL orders (default: `7.00` BRL).
-- `beholdertracker.defaults.expected-profit-rate-aa`: Benchmark expected profit rate per annum (default: `10.0` %).
-- `beholdertracker.price-provider.active`: Active price provider engine (`MOCK` or `BRAZILIAN_EXCHANGE_API`).
-- `beholdertracker.cache.prices.ttl-minutes`: In-memory price cache TTL (default: `15` min).
+- `beholdtracker.defaults.buy-operational-cost`: Standard operational cost for BUY orders (default: `5.00` BRL).
+- `beholdtracker.defaults.sell-operational-cost`: Standard operational cost for SELL orders (default: `7.00` BRL).
+- `beholdtracker.defaults.expected-profit-rate-aa`: Benchmark expected profit rate per annum (default: `10.0` %).
+- `beholdtracker.price-provider.active`: Active price provider engine (`MOCK` or `BRAZILIAN_EXCHANGE_API`).
+- `beholdtracker.cache.prices.ttl-minutes`: In-memory price cache TTL (default: `15` min).
 
 ---
 

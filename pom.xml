@@ -9,14 +9,15 @@
         <version>3.3.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.ladeschamps.beholdertracker</groupId>
-    <artifactId>beholdertracker</artifactId>
+    <groupId>com.ladeschamps.beholdtracker</groupId>
+    <artifactId>beholdtracker</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>BeholderTracker</name>
-    <description>BeholderTracker - Investment Growth Tracking System</description>
+    <name>BeholdTracker</name>
+    <description>BeholdTracker - Investment Growth Tracking System</description>
 
     <properties>
         <java.version>17</java.version>
+        <logback.version>1.5.19</logback.version>
     </properties>
 
     <dependencies>
